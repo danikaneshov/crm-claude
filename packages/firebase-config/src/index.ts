@@ -1,2 +1,2 @@
-export { getAdminApp, getDb, getAdminAuth } from './admin.js';
-export { getClientApp, getClientAuth } from './client.js';
+export { getAdminApp, getDb, getAdminAuth } from './admin';
+export { getClientApp, getClientAuth } from './client';

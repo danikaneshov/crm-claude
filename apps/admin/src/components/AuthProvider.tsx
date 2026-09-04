@@ -2,7 +2,8 @@
 
 import { createContext, useContext, useEffect, useState } from 'react';
 import { getAuth, onAuthStateChanged, User } from 'firebase/auth';
-import { app } from '@crm/firebase-config';
+import { getClientApp } from '@crm/firebase-config';
+getClientApp();
 
 interface AuthContextType {
   user: User | null;
