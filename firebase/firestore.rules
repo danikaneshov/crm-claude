@@ -1,0 +1,11 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // DENY ALL direct client access.
+    // All operations go through Backend API (firebase-admin bypasses these rules).
+    // This is the most secure approach for our architecture.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

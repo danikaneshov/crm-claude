@@ -1,0 +1,8 @@
+const firebaseConfig = {
+  apiKey: "AIzaSyDCL0P1T2RJPtcBCEuUGey-G8M_4JiD96E",
+  authDomain: "crm-tamer.firebaseapp.com",
+  projectId: "crm-tamer",
+  storageBucket: "crm-tamer.firebasestorage.app",
+  messagingSenderId: "633252201058",
+  appId: "1:633252201058:web:2a8059047cabb92804c73b"
+};
