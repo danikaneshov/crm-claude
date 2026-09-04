@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { getAuth } from 'firebase/auth';
-import { getClientApp } from '@crm/firebase-config';
+import { getClientApp } from '@crm/firebase-config/client';
 getClientApp();
 
 export const apiClient = axios.create({

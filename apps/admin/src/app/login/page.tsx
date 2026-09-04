@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 import { getAuth, signInWithEmailAndPassword } from 'firebase/auth';
-import { getClientApp } from '@crm/firebase-config';
+import { getClientApp } from '@crm/firebase-config/client';
 getClientApp();
 import { useRouter } from 'next/navigation';
 import { Loader2 } from 'lucide-react';

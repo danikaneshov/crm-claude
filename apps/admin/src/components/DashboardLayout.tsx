@@ -6,7 +6,7 @@ import { useEffect } from 'react';
 import Link from 'next/link';
 import { LayoutDashboard, Users, MapPin, Clock, FileText, Activity, LogOut, Loader2 } from 'lucide-react';
 import { getAuth, signOut } from 'firebase/auth';
-import { getClientApp } from '@crm/firebase-config';
+import { getClientApp } from '@crm/firebase-config/client';
 getClientApp();
 import clsx from 'clsx';
 
