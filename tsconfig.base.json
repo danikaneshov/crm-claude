@@ -15,9 +15,8 @@
     "declarationMap": true,
     "sourceMap": true,
     "outDir": "./dist",
-    "baseUrl": ".",
     "paths": {
-      "@crm/*": ["packages/*/src"]
+      "@crm/*": ["./packages/*/src"]
     }
   },
   "exclude": ["node_modules", "dist"]
