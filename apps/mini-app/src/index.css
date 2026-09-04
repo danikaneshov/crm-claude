@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Fallback values for running outside Telegram */
+    --tg-theme-bg-color: #ffffff;
+    --tg-theme-text-color: #000000;
+    --tg-theme-hint-color: #999999;
+    --tg-theme-link-color: #2481cc;
+    --tg-theme-button-color: #2481cc;
+    --tg-theme-button-text-color: #ffffff;
+    --tg-theme-secondary-bg-color: #f4f4f5;
+    --tg-theme-header-bg-color: #ffffff;
+    --tg-theme-accent-text-color: #2481cc;
+    --tg-theme-section-bg-color: #ffffff;
+    --tg-theme-section-header-text-color: #6c757d;
+    --tg-theme-subtitle-text-color: #999999;
+    --tg-theme-destructive-text-color: #ef4444;
+  }
+  
+  html, body {
+    @apply bg-tg-secondary text-tg-text min-h-screen font-sans;
+  }
+}
