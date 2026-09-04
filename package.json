@@ -2,6 +2,7 @@
   "name": "crm-hookah",
   "version": "1.0.0",
   "private": true,
+  "packageManager": "pnpm@10.28.0",
   "description": "CRM для кальянного бизнеса",
   "scripts": {
     "dev": "turbo dev",
