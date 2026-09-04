@@ -7,7 +7,7 @@ import Link from 'next/link';
 import { LayoutDashboard, Users, MapPin, Clock, FileText, Activity, LogOut, Loader2 } from 'lucide-react';
 import { getAuth, signOut } from 'firebase/auth';
 import { getClientApp } from '@crm/firebase-config/client';
-getClientApp();
+const app = getClientApp();
 import clsx from 'clsx';
 
 export function DashboardLayout({ children }: { children: React.ReactNode }) {

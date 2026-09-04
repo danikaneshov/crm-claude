@@ -20,6 +20,7 @@
     ],
     "paths": {
       "@/*": ["./src/*"],
+      "@crm/firebase-config/client": ["../../packages/firebase-config/src/client"],
       "@crm/*": ["../../packages/*/src"]
     }
   },

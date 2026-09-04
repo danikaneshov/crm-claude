@@ -1,7 +1,7 @@
 import axios from 'axios';
 import { getAuth } from 'firebase/auth';
 import { getClientApp } from '@crm/firebase-config/client';
-getClientApp();
+const app = getClientApp();
 
 export const apiClient = axios.create({
   baseURL: process.env.NEXT_PUBLIC_API_URL || '/api',
