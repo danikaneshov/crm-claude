@@ -4,8 +4,8 @@
 // Returns aggregated stats for dashboard.
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendSuccess, sendError } from '../../_lib/helpers.js';
-import { authAdmin } from '../../_lib/auth.js';
+import { handleCors, sendSuccess, sendError } from '../../_lib/helpers';
+import { authAdmin } from '../../_lib/auth';
 import { getDb } from '@crm/firebase-config';
 import { COLLECTIONS, dashboardQuerySchema } from '@crm/shared';
 import type { DashboardStats } from '@crm/shared';

@@ -1,3 +1,3 @@
-export { validateInitData, InitDataValidationError } from './initdata.js';
-export { uploadPhotoToChannel, downloadPhotoFromTelegram } from './storage.js';
-export type { TelegramPhotoResult } from './storage.js';
+export { validateInitData, InitDataValidationError } from './initdata';
+export { uploadPhotoToChannel, downloadPhotoFromTelegram } from './storage';
+export type { TelegramPhotoResult } from './storage';

@@ -4,8 +4,8 @@
 // Returns the master's current open shift (if any).
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendSuccess, sendError } from '../../_lib/helpers.js';
-import { authMaster } from '../../_lib/auth.js';
+import { handleCors, sendSuccess, sendError } from '../../_lib/helpers';
+import { authMaster } from '../../_lib/auth';
 import { getDb } from '@crm/firebase-config';
 import { COLLECTIONS, SHIFT_STATUS } from '@crm/shared';
 

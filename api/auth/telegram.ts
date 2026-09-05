@@ -4,8 +4,8 @@
 // Validates Telegram initData and returns JWT + employee info.
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendSuccess, sendError } from '../_lib/helpers.js';
-import { authenticateWithTelegram } from '../_lib/auth.js';
+import { handleCors, sendSuccess, sendError } from '../_lib/helpers';
+import { authenticateWithTelegram } from '../_lib/auth';
 import { telegramAuthSchema } from '@crm/shared';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {

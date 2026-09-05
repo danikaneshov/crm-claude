@@ -4,8 +4,8 @@
 // Returns salary summary for the authenticated master for a given period.
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendSuccess, sendError } from '../_lib/helpers.js';
-import { authMaster } from '../_lib/auth.js';
+import { handleCors, sendSuccess, sendError } from '../_lib/helpers';
+import { authMaster } from '../_lib/auth';
 import { getDb } from '@crm/firebase-config';
 import { COLLECTIONS, salaryQuerySchema } from '@crm/shared';
 import type { SalarySummary, ShiftSalaryItem } from '@crm/shared';

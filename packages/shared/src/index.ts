@@ -2,7 +2,7 @@
 // @crm/shared — Public API
 // ==========================================
 
-export * from './types/index.js';
-export * from './business-logic/index.js';
-export * from './validation/index.js';
-export * from './constants/index.js';
+export * from './types/index';
+export * from './business-logic/index';
+export * from './validation/index';
+export * from './constants/index';

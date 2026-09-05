@@ -4,8 +4,8 @@
 // Returns locations accessible to the authenticated master.
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendSuccess, sendError } from '../_lib/helpers.js';
-import { authMaster } from '../_lib/auth.js';
+import { handleCors, sendSuccess, sendError } from '../_lib/helpers';
+import { authMaster } from '../_lib/auth';
 import { getDb } from '@crm/firebase-config';
 import { COLLECTIONS } from '@crm/shared';
 import type { Location } from '@crm/shared';

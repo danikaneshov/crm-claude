@@ -17,7 +17,7 @@ let auth: Auth;
  * Uses service account credentials from environment variables.
  */
 export function getAdminApp(): App {
-  if (!app && getApps().length === 0) {
+  if (getApps().length === 0) {
     const privateKey = process.env.FIREBASE_PRIVATE_KEY?.replace(/\\n/g, '\n');
 
     if (!process.env.FIREBASE_PROJECT_ID || !process.env.FIREBASE_CLIENT_EMAIL || !privateKey) {

@@ -4,8 +4,8 @@
 // Returns list of colleagues at a given location (for second master selection).
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendSuccess, sendError, BadRequestError } from '../../_lib/helpers.js';
-import { authMaster } from '../../_lib/auth.js';
+import { handleCors, sendSuccess, sendError, BadRequestError } from '../../_lib/helpers';
+import { authMaster } from '../../_lib/auth';
 import { getDb } from '@crm/firebase-config';
 import { COLLECTIONS } from '@crm/shared';
 

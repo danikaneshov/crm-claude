@@ -5,9 +5,9 @@
 // PUT: Correct shift results (admin override)
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendSuccess, sendError, NotFoundError, BadRequestError } from '../../_lib/helpers.js';
-import { authAdmin } from '../../_lib/auth.js';
-import { logAudit, logShiftChange } from '../../_lib/audit.js';
+import { handleCors, sendSuccess, sendError, NotFoundError, BadRequestError } from '../../_lib/helpers';
+import { authAdmin } from '../../_lib/auth';
+import { logAudit, logShiftChange } from '../../_lib/audit';
 import { getDb } from '@crm/firebase-config';
 import {
   COLLECTIONS,

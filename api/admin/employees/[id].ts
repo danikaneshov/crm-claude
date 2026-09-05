@@ -5,9 +5,9 @@
 // PUT: Update employee
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendSuccess, sendError, NotFoundError } from '../../_lib/helpers.js';
-import { authAdmin } from '../../_lib/auth.js';
-import { logAudit } from '../../_lib/audit.js';
+import { handleCors, sendSuccess, sendError, NotFoundError } from '../../_lib/helpers';
+import { authAdmin } from '../../_lib/auth';
+import { logAudit } from '../../_lib/audit';
 import { getDb } from '@crm/firebase-config';
 import { COLLECTIONS, AUDIT_ACTIONS, employeeUpdateSchema } from '@crm/shared';
 import { FieldValue } from 'firebase-admin/firestore';

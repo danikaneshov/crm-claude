@@ -5,8 +5,8 @@
 // This is the main pipeline: photo → Telegram → Gemini → salary calculation.
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendSuccess, sendError, BadRequestError, ForbiddenError, NotFoundError } from '../../_lib/helpers.js';
-import { authMaster } from '../../_lib/auth.js';
+import { handleCors, sendSuccess, sendError, BadRequestError, ForbiddenError, NotFoundError } from '../../_lib/helpers';
+import { authMaster } from '../../_lib/auth';
 import { getDb } from '@crm/firebase-config';
 import {
   COLLECTIONS,
@@ -16,7 +16,7 @@ import {
 } from '@crm/shared';
 import type { Shift, Location } from '@crm/shared';
 import { uploadPhotoToChannel, downloadPhotoFromTelegram } from '@crm/telegram';
-import { analyzeReport } from '../../_lib/gemini.js';
+import { analyzeReport } from '../../_lib/gemini';
 import { FieldValue } from 'firebase-admin/firestore';
 
 // Vercel config for file uploads

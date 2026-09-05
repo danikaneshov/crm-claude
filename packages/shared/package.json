@@ -6,6 +6,6 @@
   "types": "./src/index.ts",
   "scripts": {
     "build": "echo 'No build needed'",
-    "dev": "tsc --watch"
+    "dev": "echo 'Ready'"
   }
 }

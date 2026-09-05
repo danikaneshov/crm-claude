@@ -20,7 +20,7 @@ let app: FirebaseApp;
 let auth: Auth;
 
 export function getClientApp(): FirebaseApp {
-  if (!app && getApps().length === 0) {
+  if (getApps().length === 0) {
     app = initializeApp(firebaseConfig);
   } else if (!app) {
     app = getApps()[0];

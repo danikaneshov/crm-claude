@@ -5,8 +5,8 @@
 // GET: Get shift history for authenticated master
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendSuccess, sendError, BadRequestError, ConflictError, ForbiddenError, NotFoundError } from '../_lib/helpers.js';
-import { authMaster } from '../_lib/auth.js';
+import { handleCors, sendSuccess, sendError, BadRequestError, ConflictError, ForbiddenError, NotFoundError } from '../_lib/helpers';
+import { authMaster } from '../_lib/auth';
 import { getDb } from '@crm/firebase-config';
 import { COLLECTIONS, SHIFT_STATUS, shiftOpenSchema, SHIFT_COEFFICIENTS } from '@crm/shared';
 import type { Employee, Location } from '@crm/shared';

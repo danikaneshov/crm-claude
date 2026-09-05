@@ -8,7 +8,7 @@ import { validateInitData } from '@crm/telegram';
 import { getDb, getAdminAuth } from '@crm/firebase-config';
 import { COLLECTIONS } from '@crm/shared';
 import type { JWTPayload, Employee } from '@crm/shared';
-import { UnauthorizedError, ForbiddenError } from './helpers.js';
+import { UnauthorizedError, ForbiddenError } from './helpers';
 
 function getJwtSecret(): string {
   const secret = process.env.JWT_SECRET;

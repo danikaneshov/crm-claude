@@ -2,7 +2,7 @@
 // CRM Hookah — Business Logic
 // ==========================================
 
-import type { LocationSalaryRules } from '../types/index.js';
+import type { LocationSalaryRules } from '../types/index';
 
 // --- Constants ---
 export const SHIFT_COEFFICIENTS = {

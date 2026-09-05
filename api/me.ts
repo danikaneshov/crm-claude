@@ -4,8 +4,8 @@
 // Returns the authenticated master's profile.
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendSuccess, sendError } from '../_lib/helpers.js';
-import { authMaster } from '../_lib/auth.js';
+import { handleCors, sendSuccess, sendError } from '../_lib/helpers';
+import { authMaster } from '../_lib/auth';
 
 export default async function handler(req: VercelRequest, res: VercelResponse) {
   if (handleCors(req, res)) return;

@@ -4,8 +4,8 @@
 // Returns the report photo from Telegram storage.
 
 import type { VercelRequest, VercelResponse } from '@vercel/node';
-import { handleCors, sendError, NotFoundError, BadRequestError } from '../../../_lib/helpers.js';
-import { authAdmin } from '../../../_lib/auth.js';
+import { handleCors, sendError, NotFoundError, BadRequestError } from '../../../_lib/helpers';
+import { authAdmin } from '../../../_lib/auth';
 import { getDb } from '@crm/firebase-config';
 import { COLLECTIONS } from '@crm/shared';
 import { downloadPhotoFromTelegram } from '@crm/telegram';

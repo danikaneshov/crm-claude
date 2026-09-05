@@ -10,7 +10,7 @@
     "lint": "turbo lint",
     "dev:mini-app": "turbo dev --filter=mini-app",
     "dev:admin": "turbo dev --filter=admin",
-    "dev:api": "vercel dev",
+    "dev:api": "vercel dev --yes",
     "build:mini-app": "turbo build --filter=mini-app",
     "build:admin": "turbo build --filter=admin"
   },
